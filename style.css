@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background: #5dc4e4;*/
+}
+
+.card {
+    width: fit-content;
+    background: rgba(75, 192, 192, 1);
+    border: 2px solid rgba(75, 192, 192, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 7px;
+    float: left;
+}
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    float: left;
+    border: 2px solid #ffffff;
+}
+#graph {
+    width: 49%;
+    float: right;
+    border: 2px solid #ffffff;
+}
