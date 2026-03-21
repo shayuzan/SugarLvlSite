@@ -35,7 +35,7 @@ fetch("https://sugarleveltrackingapp-fad70-default-rtdb.firebaseio.com/.json")
                 ${entry.time.dayOfMonth}/${entry.time.monthValue}/${entry.time.year}
                 ${entry.time.hour}:${entry.time.minute}
             </div>
-            <input type="text" id="${id}" />
+            <input type="text" id="txt-${id}" />
             <button id="updateBtn" onclick="updateEntry('${id}')">Update Note</button>
             <br />
             <button id="deleteBtn" onclick="deleteEntry('${id}')">Delete</button>
@@ -67,7 +67,7 @@ function deleteEntry(id) {
 }
 
 function updateEntry(id) {
-    const newNote = document.getElementById(id).value;
+    const newNote = document.getElementById("txt-" + id).value;
     fetch(
         `https://sugarleveltrackingapp-fad70-default-rtdb.firebaseio.com/${id}.json`,
         {
